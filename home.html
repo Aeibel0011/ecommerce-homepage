@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website with Slideshow</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <section class="container">
+      <div class="logo">
+        <i class="fa-solid fa-shop"></i>
+      </div>
+      <ul class="menu">
+        <li class="menu-list"><a href="#" class="menu-link">Home</a></li>
+        <li class="menu-list"><a href="#brands" class="menu-link">Categories</a></li>
+        <li class="menu-list"><a href="products.html" class="menu-link">Products</a></li>
+        <li class="menu-list"><a href="abt.html" class="menu-link">About</a></li>
+        <li class="menu-list"><a href="contact.html" class="menu-link">Contact</a></li>
+        <li class="menu-list"><a href="login.html" class="menu-link">Login</a></li>
+      </ul>
+    </section>
+  </nav>
+
+  <!-- Slideshow Section -->
+  <section class="slideshow">
+    <div class="slide active">
+      <video src="image/New_PCD_B6Q6_Main-KV_1440x640_pc.webm" autoplay muted loop></video>
+      <span class="slide-text">Galaxy Z Fold6 | Z Flip6</span>
+      
+
+    </div>
+    <div class="slide">
+      <img src="image/slide2.webp" alt="Image 1">
+      <span class="slide-text">Experience a New Era of <br>Samsung AI TV</span>
+    </div>
+    <div class="slide">
+      <img src="image/HKV3--2_1440x640.webp" alt="Image 2">
+      <span class="slide-text" style="color: white;">Bespoke AI™ Laundry</span>
+    </div>
+    <div class="slide">
+      <img src="image/slide4.webp" alt="Image 2">
+      <span class="slide-text" >Save up to $1,000 <br>on The Frame</span>
+      <span class="slide-text2">Plus, get $100 off Ultra-slim Wireless<br> Dolby ATMOS SoundbarHW-S800D with purchase. </span>
+    </div>
+
+    <!-- Navigation Dots -->
+    <div class="dots-container">
+      <span class="dot active" onclick="currentSlide(0)"></span>
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <!-- Navigation Arrows -->
+    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+  </section>
+
+  <!-- Marquee Section -->
+  <div id="brands" class="marquee-container">
+    <marquee>
+      <img src="logos/Samsung_logo-14.svg" alt="Samsung">
+      <img src="logos/apple-logo-4-1.svg" alt="Apple">
+      <img src="logos/Asus-Logo-SVG_001.svg" alt="Asus">
+      <img src="logos/LG-Logo-SVG_002.svg" alt="LG">
+      <img src="logos/Sony-Logo-1.svg" alt="sony">
+      <img src="logos/HP-Logo-1.svg" alt="HP">
+      <img src="logos/Acer-Predator-Logo-1.svg" alt="Acer">
+      <img src="logos/xiaomi-logo-3.svg" alt="Xiaomi">
+      
+
+    </marquee>
+  </div>
+
+  <!-- Categories Section -->
+  <section class="categories">
+    <h2 class="category-title">Shop by Categories</h2>
+
+    <div class="category-container">
+      <div class="firstcat">
+        <div class="category-item category-item1">
+          <a href="#">
+            <img src="logos/phonebanner.avif" alt="Smartphones" class="category-image1">
+            <div class="category-info">
+              <h3 style="color: white;" class="category-name">Smartphones</h3>
+              <a href="products.html" class="category-button">Shop Now</a>
+            </div>
+          </a>
+        </div>
+
+        <div class="category-item category-item2">
+          <a href="#">
+            <img src="image/laptopstopicpage-2048px-3685-2x1-1.webp" alt="Laptops" class="category-image2">
+            <div class="category-info">
+              <h3 class="category-name">Laptops</h3>
+              <a href="products.html" class="category-button">Shop Now</a>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="secondcat">
+        <div class="category-item category-item3">
+          <a href="#">
+            <img src="image/tv.jpg" alt="Smart TVs" class="category-image3">
+            <div class="category-info">
+              <h3 class="category-name">Smart TVs</h3>
+              <a href="products.html" class="category-button">Shop Now</a>
+            </div>
+          </a>
+        </div>
+
+        <div class="category-item category-item4">
+          <a href="#">
+            <img src="image/smartwatch-25.jpg" alt="Smart Watches" class="category-image4">
+            <div class="category-info">
+              <h3 style="color: white;" class="category-name">Smart Watches</h3>
+              <a href="products.html" class="category-button">Shop Now</a>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- Banner -->
+<div class="banner">
+  <img src="image/divimage.avif" alt="Special Offer Banner">
+  <div class="banner-content">
+    <span class="slide-text">Galaxy Z Fold6 | Z Flip6</span>
+    <button class="shop-now">Shop Now</button>
+  </div>
+</div>
+
+<!-- Product Section -->
+<div class="new-section">
+  <div class="card-container">
+    <!-- Card 1 -->
+    <div class="card">
+      <div class="image-box">
+        <img src="https://m.media-amazon.com/images/I/61RcOfisl7L._SX679_.jpg" 
+             alt="Main Image" class="main-img">
+        <img src="https://m.media-amazon.com/images/I/713y8XK0vCL._SX679_.jpg" alt="Hover Image 1" class="hover-img">
+      </div>
+      <div class="content">
+        <h3 class="category">Laptops</h3>
+        <p class="product-name">Apple 2023 MacBook Pro 16-inch, Apple M3 Max </p>
+        <div class="details">
+          <span class="price">₹3,19,900</span>
+          <span class="original-price">₹3,49,900</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <div class="image-box">
+        <img src="https://m.media-amazon.com/images/I/81vxWpPpgNL._SX679_.jpg" 
+             alt="Main Image" class="main-img">
+        <img src="https://m.media-amazon.com/images/I/71tMPWYWRqL._SX679_.jpg" alt="Hover Image 1" class="hover-img">
+       
+      </div>
+      <div class="content">
+        <h3 class="category">Smart Phones</h3>
+        <p class="product-name">Samsung Galaxy S24 Ultra 5G AI Smartphone</p>
+        <div class="details">
+          <span class="price">₹1,21,999</span>
+          <span class="original-price">₹1,34,999</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <div class="image-box">
+        <img style=" width: 265px; left: 19px;object-fit: contain;" src="https://m.media-amazon.com/images/I/71xbRrfWMML._SX679_.jpg" 
+             alt="Main Image" class="main-img">
+        <img  style=" width: 265px; left: 19px;object-fit: contain;" src="https://m.media-amazon.com/images/I/7137Aef3xDL._SX679_.jpg" alt="Hover Image 1" class="hover-img">
+   
+      </div>
+      <div class="content">
+        <h3 class="category">Smart TV</h3>
+        <p class="product-name">Samsung 189 cm (75 inches) 8K Ultra HD </p>
+        <div class="details">
+          <span class="price">₹4,49,990</span>
+          <span class="original-price">₹9,49,900</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="image-box">
+        <img src="https://m.media-amazon.com/images/I/81i1Vn-KQuL._SX679_.jpg" 
+             alt="Main Image" class="main-img">
+        <img src="https://m.media-amazon.com/images/I/919-t+phMrL._SX679_.jpg" alt="Hover Image 1" class="hover-img">
+      </div>
+      <div class="content">
+        <h3 class="category">Smart Watch</h3>
+        <p class="product-name">Samsung Galaxy Watch Ultra(47mm, LTE, Gray) </p>
+        <div class="details">
+          <span class="price">₹58,999</span>
+          <span class="original-price">₹69,999</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="container">
+    <!-- Footer Top -->
+    <div class="footer-top">
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="#brands">Categories</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p><i class="fa-solid fa-phone"></i> +91 8675483729</p>
+        <p><i class="fa-solid fa-envelope"></i> depua123@gmail.com</p>
+        <p><i class="fa-solid fa-map-marker-alt"></i> 59GF+MW2, De Paul Nagar Kochi, Angamaly South, Angamaly, Kerala 683573</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <p>&copy; 2024 Your Website Name. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
